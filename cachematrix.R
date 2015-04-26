@@ -4,13 +4,17 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
+##make cache matrix
+  
   m<-NULL
   set<-function(y){
     x<<-y
     m<<-NULL
   }
   get<-function() x
+  ##set value of matrix
   setmatrix<-function(solve) m<<- solve
+  ##get value of matrix
   getmatrix<-function() m
   list(set=set, get=get,
        setmatrix=setmatrix,
